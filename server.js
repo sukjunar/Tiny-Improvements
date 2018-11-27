@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const MONGODB_URI = require("./config/keys")
+const MONGODB_URI = require("./config/keys.js")
 
 const PORT = PORT || 8080;
 const app = express();
