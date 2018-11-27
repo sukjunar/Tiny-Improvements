@@ -1,0 +1,21 @@
+.navbar {
+    height: 60px;
+}
+
+#kudos {
+    height: 92vh;
+    overflow-y: scroll;
+}
+
+.nameLogo {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 37px;
+    margin-top: 8px;
+    height: 49px;
+}
+
+.btn.btn-primary {
+    background-color: #473080;
+    border-color: #473080;
+    color: #ffde39;
+}
