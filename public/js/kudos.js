@@ -32,7 +32,6 @@ getKudos();
 getUsers();
 
 const postKudo = function () {
-    getUsers();
     const toUser = $('#toUsername').val().trim();
     const fromUser = sessionStorage.getItem('token');
     const kudoTitle = $('#kudoTitle').val().trim();
@@ -46,3 +45,4 @@ const postKudo = function () {
         })
 }
 $('#kudoButton').on('click', postKudo);
+$('#kudoButton').on('click', getUsers);
