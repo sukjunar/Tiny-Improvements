@@ -1,8 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const MONGODB_URI = require("./config/keys.js")
 
-const PORT = PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 
@@ -12,9 +11,9 @@ app.use(express.static("public"));
 
 
 mongoose.connect(
-    MONGODB_URI || 'mongodb://localhost/kudoApp',
+    process.env.MONGODB_URI || 'mongodb://sukjunar:Wayne0126!@ds137631.mlab.com:37631/heroku_4s1k6gdh',
     {
-        useMongoClient: true
+        useNewUrlParser: true
     }
 );
 
