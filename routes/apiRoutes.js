@@ -26,7 +26,6 @@ module.exports = function (app) {
 
     app.get('/api/user/:id', function (req, res) {
         User.find({ _id: req.params.id })
-            .populate('kudos')
             .then(function (data) {
                 res.json(data);
             })

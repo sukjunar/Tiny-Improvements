@@ -19,3 +19,25 @@
     border-color: #473080;
     color: #ffde39;
 }
+
+.purple {
+    font-weight: bold;
+    color: #473080;
+}
+
+.center {
+    text-align: center;
+}
+
+ol {
+    padding-right: 25px;
+    margin-bottom: 0px;
+}
+
+em {
+    font-size: 112.5%;
+}
+
+h5#welcome {
+    margin-bottom: 0px;
+}

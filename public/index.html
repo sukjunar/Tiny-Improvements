@@ -45,14 +45,54 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-10" id="kudos">
+            <div class="col-9" id="kudos">
             </div>
-            <div class="col-2">
-                <button id="purpleButton" type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#kudoModal">
-                    Give a Kudo!
-                </button>
+            <div class="col-3">
+                <br />
+                <div id="alert">
+                    <div class="center alert alert-danger" role="alert">
+                        <h5 id="welcome">
+                            Please Login!
+                        </h5>
+                    </div>
+                </div>
+                <div class="center">
+                    <button id="purpleButton" type="button" class="btn btn-lg btn-primary mt-3" data-toggle="modal"
+                        data-target="#kudoModal">
+                        Give a Kudo!
+                    </button>
+                </div>
+                <br />
+
+                <div id="instructions">
+                    <h4 class="purple center">
+                        Welcome!
+                    </h4>
+                    <ol>
+                        <li>
+                            <em class="purple">Register.</em> If you are not a registered user, click on <img src="./assets/register.png"
+                                alt="register" style="height: 20px" /> to register.
+
+                        </li>
+                        <br />
+                        <li>
+                            <em class="purple">Login.</em> Once you have created a username and a password, use those
+                            credentials
+                            to
+                            login by clicking on <img src="./assets/login.png" alt="login" style="height: 20px" />.
+                        </li>
+                        <br />
+                        <li>
+                            <em class="purple">Post.</em> Using the <img src="./assets/kudo.PNG" alt="kudo" style="height: 30px" />
+                            button above, select who you are
+                            sending the
+                            kudo to, write the title and the message, and post the kudo.
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Login Modal -->

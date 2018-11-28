@@ -8,7 +8,7 @@ const rendersKudos = function (data) {
 }
 
 const rendersUsers = function (data) {
-    $('#dropdownUsers').empty();
+    $('#toUsername').empty();
     for (let i = 0; i < data.length; i++) {
         $('#toUsername').append(`<option id="toUser ${data[i].username}" value="${data[i]._id}">${data[i].username}</option>`)
     }
@@ -45,4 +45,4 @@ const postKudo = function () {
         })
 }
 $('#kudoButton').on('click', postKudo);
-$('#kudoButton').on('click', getUsers);
+$('#purpleButton').on('click', getUsers);
